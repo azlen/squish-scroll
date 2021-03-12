@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Wrap</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Space Grotesk", sans-serif;
+            font-family: "Crimson Text", serif;
+
+            background: #000000;
+            color: #FFFFFF;
+
+            /* display: flex;
+            align-items: center; */
+        }
+        body {
+            display: flex;
+            align-items: center;
+        }
+        /* body {
+            width: 600px;
+            max-height: 600px;
+            margin: auto;
+        } */
+
+        #container {
+            position: relative;
+            margin-top: 200px;
+            width: 600px;
+            height: 500px;
+            margin: auto;
+            /* border: 1px solid #000; */
+            line-height: 1.4;
+        }
+        #scroll {
+            overflow: scroll;
+            width: 100%;
+            height: 100%;
+        }
+        #scroll p:first-child { margin-top: 200px }
+        #scroll p:last-child { margin-bottom: 200px }
+        #scroll * {
+            /* opacity: 1; */
+            /* opacity: 0; */
+        }
+        #scroll div:not(.overline) {
+            opacity: 0;
+        }
+        #text {
+            /* position: fixed; */
+            width: 600px;
+            top: 0;
+            /* opacity: 0; */
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .overline {
+            pointer-events: none;
+        }
+
+       .outside {
+           color: #666666;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <div id="scroll">
+            <!-- <p></p><strong style="text-align: center">Eleven Tasks for Urban Design</strong> -->
+            <p><strong>1. Reinforce Neighbourhoods</strong></p>
+            <p>The neighbourhood must be at the centre. If the city is to resist the homogenisations of the global culture and to nurture local culture and participation, then the delineability and vigour of the neighbourhood must be assured. The neighbourhood is the means by which the social city is comprehended. Urban designers should work to create and reinforce neighbourhoods that situate both the conveniences and necessities of daily life within easy walking compass of places of residence, that maximise economic, social, cultural, and ecological self-sufficiency, that assert an autonomous physical character, and that share equitably in the benefits and responsibilities of the larger metropolis. Extent—the coalescence of scale, density, dimension, and activity—is the threshold of urbanity and we have lost of its most intimate meanings.</p>
+            <p><strong>2. Make It Sustainable</strong></p>
+            <p>The logic of urban ecology demands a restoration of the greatest reasonable degree of self-sufficiency: local self-reliance is the lesson of global interdependencce. Urban designers must become he economists of energy cycles, oxygen production, thermal regulation, agriculture, raw and reused materials—all the quiddities of the city. The issue is not invariably to begin with a fixed form and imagine how it might be improved by modest variations—a catalytic converter, an airbag...—but to responsibly conjure the marvellous.</p>
+            <p><strong>3. Add Green Everywhere</strong></p>
+            <p>The city exists as both an exception and a complement to its territory, legible only in relation to the green spaces in which it sits and which sit in it. Use of these spaces is a fundamental right of city citizens and urban design should work to guarantee this in terms of convenience and variety, both private and public. This distribution of green should effect both the location of construction and its form. Consider for example, the architecture that might result if the equivalent of fifty or seventy or a hundred percent of the surface of a city were to be green, how building might harbour and support it. We are too caught up in an artificial dichotomy between the city and nature: the house and garden (even the city and its parks) are only the most tentative and preliminary expressions of the possibilities.</p>
+            <p><strong>4. Secure The Edge</strong></p>
+            <p>Cities run the risk of asphyxiating in their own extent. There is a boundary of apraxia, a point of absolute dysfunction beyond which the city simply can no longer perform coordinated actions. The urban edge secures the viability of the city both functionally and perceptually. The delineability of the city is pre-condition for a sense of citizenship, therefore of urban democracy. Again, the logic of governance in a globalising culture and economy will demand a strengthening of locality, not a progressive dissipation of the autonomy of cities into the increasingly artificial ecoomies of nation-states. City edges—however permeable—are also formal, sets of places. It seems fundamental that one should be able to actually leave town: the 'edge city' means you never can.</p>
+            <p><strong>5. Make Public Places</strong></p>
+            <p>There is simply no substitute for the physical spaces of public assembly. Increasingly imperilled by commercialisation, electronification, criminality, and neglect, both the idea and the forms of gathering are a central subject for the imagination of urban design. Public space is the lever by which urban design works on the city, by which the subtle relations of public and private are nourished. A fixation on the media of production of these spaces has overcome any passion for their quality, even as a Nielsenesque resignation stupidly celebrates any gathering, however it is induced. Urban design must keep Giants' Stadium from annihilating Washington Square even as it seeks all the alternatives in-between. The Internet is great but it ain't Piazza Navona: free association and chance encounter still demand the meeting of bodies in space. Embodiment is the condition of accident and accident is a motor of democracy.</p>
+            <p><strong>6. Be Sure Rooms Have Views</strong></p>
+            <p>Modernist urbanism was not all bad. Le Corbusier's three qualities—light, air, and greenery—still form a matrix for urban design. The issue lies in making sure all the views are not the same. The architecture of the city is the compact of conflicting desires, continuously unfolding. If the American frontier offered a vision of absolute vision, of an untrammelled homestead unlimited by the physical presence of one's neighbour (a fantasy stoked by the sure psychical symmetry of Jefferson's infinite grid), the city is the instrument and the laboratory of adjudicated desire, in which every happy inhabitation is the marker of agreement. Here is a site for thinking architecture, for a science and art of replacing rival, hostile, claims with a crafting of unvalenced difference. What is wanted is a city with an infinity of views that embody a luxury of choices, not a system of priveleges.</p>
+            <p><strong>7. Finesse The Mix</strong></p>
+            <p>What has begun to happen to the city as locationality really begins to float is the saturation of the mix. As production ceases to foul the environment, as classes, races, and nationalities learn to dessist in denying each other's enjoyment—enforcing segregation—and as communication becomes truly transpaternt, anything might appear anywhere. All the new species produced by our dizzyingly splicing culture demand a city in which they will be able to live together comfortably, not the zoning and monofunction of the planners. Urban design must keep pace by exploring the tectonics not simply of new use but of unpredictable transformation, creating cities that are as malleable as lofts and as fixed as works of art. One of the main territories of this investigation will necessarily be the compatibility of sizes, likely to become the main problematic of use harmonisation. Another will be the contestantconsideration of the appropriateness of various juxtapositions, questions of the deepest political and artistic import. Cities, after all, are juxtaposition engines, mutation machines. Theories of propriety, thought, are necessary if we are to choose among endless possibilities and make the urban work collective.</p>
+            <p><strong>8. Elaborate Movement</strong></p>
+            <p>It is time for a radical shift towards human locomotion in cities. The automobile is not simply a doomed technology in its current form, it has proved fundamentally inimical to urban density. Enforcing the hydra of attenuation and congestion, the car usurps the spaces of production and health, of circulation and enjoyment, of greenery, of safety. Fitted to the bodies of cities which could never have anticipated it, the car is a disaster in town. We cannot again repeat the mistake of retrofitting the city with a technology that does not love it, with railway cutting or freeways. Cars must lose their priority, yielding both to the absolute privilege of pedestrians and to something else as well, something that cannot yet be described, to a skein of movement each city contours to itself. This may well involve various forms of mechanical (or biological) technology but urban design—in considering the matter—should reject the mentality of available choices and formulate rational bases for fresh desires. If we cannot even describe the characteristics of superb urban transport—invisible? silent? small? leisurely? mobile in three axes? friendly?—this is because we have not taken the trouble to really imagine it.</p>
+            <p><strong>9. Localise Architecture</strong></p>
+            <p>Architecture is urban by convention, recording accumulated compacts. Climax is the key: cities are form-makers and urban design should astutely recognise indigenous forms that have reached some kind of perfection. Beautiful logics once established—whether the brownstones of Brooklyn or the labyrithns of Fex—are entitled to architectural citizenship, to a certain inalienability of rights. Climax—a term borrowed from foresters—is a condition of homeostasis, a permanent stage of growth. In cities, this must be nurtured both in use and in form. Form, after all, does enjoy a certain autonomy, originating in use and circumstances but eventually free of them. Reinforcing such character is a great task for urban design. Reproducing or simulating it is not. Fresh climaxes will not reproduce those of the past but will seek out new forms of locality. This new indigenous could come from anywhere in global culture, from the creativity of any individual, from bio-regional particulars or simply from memory. Urban design must cultivate the shoots of distinction.</p>
+            <p><strong>10. Defend Privacy</strong></p>
+            <p>We have probably spent a little too much time critiquing the failures of the public realm and not enough searching for alternatives to the dispirited lexicon of official public space and activity. Public space should be about choice and choice, finally, is a private matter. Public space needs to be rethought not simply as a series of sites but as a conceptual resource out of which an infinity of private fantasies and behaviours can be drawn, a construct at once ineffable and available, a vast collective reservoir for the watering of individual activities not yet imagined and possibly secret. The range of private choices which surround the public realm define it absolutely. Urban design is a bridge between these realms.</p>
+            <p><strong>11. Make It Beautiful</strong></p>
+            <p>For urban designers, finally, there is no other goal. We are negligent in our tasks if we fail to engage deep desire, the means by which we enlarge the city of sense, the millionfold techniques of an urban erotics.</p>
+        </div>
+        <div id="text"></div>
+    </div> 
+
+    <script src="../util.js"></script>
+    <script>
+        let lines = []
+        $$('p').map(p => {
+            let text = p.textContent;
+
+            p.innerHTML = ''
+            let spans =  Array.from(text).map(x => h('span', [x]))
+            let span_container = h('span', spans)
+            p.appendChild(span_container)
+
+            return [p, spans, span_container]
+        }).forEach(data => {
+            let [p, spans, span_container] = data
+
+            let lastY;
+            let line;
+
+            spans.map(span => {
+                let bbox = span.getBoundingClientRect()
+                return [span, bbox]
+            }).forEach(data => {
+                let [span, bbox] = data
+
+                if(bbox.y != lastY) {
+                    lastY = bbox.y
+                    line = h('div.line', h('div'))
+                    p.appendChild(line)
+
+                    lines.push(line)
+                }
+
+                line.children[0].textContent += span.textContent
+            })
+
+            p.removeChild(span_container)
+        })
+
+        function update() {
+            let parent = $('#text')
+            parent.innerHTML = ''
+
+            let lboxes = []
+            let weights = []
+
+            // let cbox = {x: 0, y: 0, height: window.innerHeight, width: window.innerWidth }
+            let cbox = $('#container').getBoundingClientRect()
+
+            lines.forEach((line, i) => {
+                let bbox = line.getBoundingClientRect()
+
+                // let dist = Math.min(Math.max(bbox.y - cbox.y, 0), Math.max(cbox.y + cbox.height - bbox.y, 0))
+                let dist = Math.abs(cbox.y + cbox.height / 2 - bbox.y)
+                let weight = Math.min(Math.max(Math.pow(Math.max(1.2 - dist / (cbox.height/2*1.5), 0), 0.3), 0.03), 1)
+
+                lboxes.push(bbox)
+                weights.push(weight)
+
+                
+            })
+
+            let totalweight = weights.reduce((a,b)=>a+b)
+            let cumulative = 0
+
+            lines.forEach((line, i) => {
+                let bbox = lboxes[i]
+                let weight = weights[i]
+
+                let position = cbox.y + cbox.height * (cumulative / totalweight)
+                // let scale = weight
+                // let relPosition = position - bbox.y
+                // if(i==0) console.log(position, relPosition);
+                // line.children[0].style.setProperty('transform', `translateY(${relPosition}px) scaleY(${weight})`)
+
+                let offset = bbox.y - cbox.y
+                let dist = Math.min(Math.max(bbox.y - cbox.y, 0), Math.max(cbox.y + cbox.height - bbox.y, 0))
+                let scale =  Math.max(Math.pow(dist / (cbox.height/2) * 1.2, 0.5), 0.1)
+
+                let outside = false;
+
+                let top = bbox.y - cbox.y
+                if(bbox.y < cbox.y) {
+                    top = (bbox.y - cbox.y)/40
+                    outside = true
+                }
+                if(bbox.y > cbox.y + cbox.height) {
+                    top = cbox.height + (bbox.y - cbox.height)/40
+                    outside = true
+                }
+
+                let element;
+                if(line.mirrorElement) {
+                    element = line.mirrorElement;
+                } else {
+                    element = h('div.overline', {
+                        style: {
+                            'position': 'absolute',
+                            // 'top': top + 'px',
+                            // 'transform': `scaleY(${scale})`,
+                            // 'opacity': outside ? 1 : 0.5 + scale/2
+                        }
+                    }, [line.textContent])
+
+                    line.parentElement.insertBefore(element, line)
+                    line.parentElement.insertBefore(line, element)
+                    line.mirrorElement = element
+                }
+
+                element.style.setProperty('top', top + 'px')
+                element.style.setProperty('transform', `scaleY(${scale})`)
+                element.style.setProperty('opacity', outside ? 1 : 0.5 + scale/2)
+
+                if(outside) {
+                    element.classList.add('outside')
+                } else {
+                    element.classList.remove('outside')
+                }
+
+                cumulative += weight
+            })
+
+            //console.log('UPDATE')
+        }
+
+        $('#scroll').addEventListener('scroll', update)
+        setTimeout(update, 100)
+    </script>
+</body>
+</html>
